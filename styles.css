@@ -1,0 +1,72 @@
+body{
+  background-color: blueviolet ;
+}
+p{
+  color: whitesmoke;
+}
+h2{
+  color: honeydew;
+}
+img {
+        width: 400px;
+        height: 500px;
+        border-radius: 200px;
+        background-color: palevioletred;
+      }
+      em {
+        color: orchid;
+        font: bolder;
+        font-size: 30px;
+      }
+      
+      a {
+        font-size: 30px;
+        margin-right: 20px;
+      }
+        
+      .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+      }
+      .links{
+        background-color: wheat;
+        padding: 15px;
+      }
+      h1{
+        color: azure;
+      }
+      .form{
+        
+        padding: 8px;
+        border-radius: 5px;
+      }
+      textarea{
+        border-radius: 5px;
+        background-color: rgb(173, 230, 221);
+      }
+      label{
+        color: whitesmoke;
+      }
+      input{
+        background-color: rgb(173, 230, 221)
+      }
+      .container2{
+       
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+       gap: 40px;
+      }
+      .text{
+       
+        font-size: 20px;
+        color: whitesmoke;
+      }
+      .form1{
+        
+      }

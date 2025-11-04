@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Blazing Cakes and Bakes" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Cate Cakes</title>
-  </head>
-
-  <form id="bookingForm">
-    <h3>Book a Cake today</h3>
     <style>
       h3 {
         font-size: 40px;
-        color: blue;
+        color: whitesmoke;
         font-style: italic;
       }
       a {
@@ -20,64 +17,82 @@
         margin-right: 20px;
       }
       button {
-        background-color: red;
+        background-color: green;
         color: whitesmoke;
+        padding: 15px;
+        border-radius: 8px;
       }
     </style>
+  </head>
+  <body>
+    <h3>Book a Cake today</h3>
 
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" required />
+    <main class="container">
+      <div class="links">
+        <a href="./index.html">Home page</a>
+      </div>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" required />
-    <label for="WhatsApp">WhatsApp </label>
-    <input type="WhatApp" id="phone number" required />
+      <div class="links">
+        <a
+          href="https://wa.me/254724277669?text=Hello%21%20Welcome%20to%20Blazing%20Cakes%20%26%20Bakes%20%E2%80%94%20where%20every%20bite%20is%20a%20delight.%20How%20may%20I%20assist%20you%20today%3F"
+          target="_blank"
+        >
+          WhatsApp us
+        </a>
+      </div>
+      <div class="links">
+        <a href="https://www.facebook.com/kate.kiambati" target="_blank"
+          >Facebook
+        </a>
+      </div>
+      
+      </div>
+    </main>
+    <main class="container2">
+      <div class="text">
+ 
+<strong>### 🎂 Book Your Sweet Moment</strong>
+<br/>
+Ready to turn your celebration into something unforgettable?<br> Whether it's a custom cake, dessert table, or full event styling, <br> <strong>Blazing Cakes & Bakes </strong>is here to craft your perfect treat. <br> Secure your spot today — sweetness awaits.
+      </div>
+      <div>
+    <form id="bookingForm" class="form1">
+      <label for="name">Your Name:</label>
+       <br/>
+      <input type="text" id="name" class="form" required />
+      <br/>
 
-    <label for="date">Preferred Date:</label>
-    <input type="date" id="date" required />
+      <label for="email" >Email:</label>
+       <br/>
+      <input type="email" id="email"class="form"  required />
+       <br/>
+      <label for="WhatsApp">WhatsApp </label>
+       <br/>
+      <input type="WhatApp" id="phone number" class="form" required />
+       <br/>
 
-    <label for="time">Preferred Time:</label>
-    <input type="time" id="time" required />
+      <label for="date">Preferred Date:</label> <br/>
+      <input type="date" id="date" class="form" required />
+       <br/>
 
-    <label for="details">Consultation Details:</label>
-
-    <textarea
-      id="details"
-      rows="4"
-      placeholder="Tell us what you'd like to discuss..."
-      required
-    ></textarea>
-
-    <button type="submit">Submit Booking</button>
-  </form>
-  <a href="index.html">home page</a>
-  <a href="contacts.html">contact us</a>
-  <a href="photos.html">photos</a>
-
-  <div id="confirmationMessage"></div>
-  <script>
-    document
-      .getElementById("bookingForm")
-      .addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        // Retrieve form values
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const date = document.getElementById("date").value;
-        const time = document.getElementById("time").value;
-        const details = document.getElementById("details").value;
-
-        // Display confirmation message
-        const message = `
-    Thank you, ${name}! 📅<br>
-    Your consultation is booked for <strong>${date}</strong> at <strong>${time}</strong>.<br>
-    A confirmation email will be sent to <strong>${email}</strong> shortly.
-  `;
-
-        document.getElementById("confirmationMessage").innerHTML = message;
-
-        // (Optional) Send data to server using fetch or save in localStorage
-      });
-  </script>
+      <label for="time">Preferred Time:</label>
+       <br/>
+      <input type="time" id="time"class="form" required />
+     <br/>
+      <label for="details">Consultation Details:</label>
+ <br/>
+      <textarea 
+        id="details"
+        rows="4"
+        placeholder="Tell us what you'd like to discuss..."
+        required
+      ></textarea>
+ <br/>
+      <button type="submit">Submit Booking</button>
+    </form>
+    </div>
+    </main>
+    <div id="confirmationMessage"></div>
+    
+  </body>
 </html>
